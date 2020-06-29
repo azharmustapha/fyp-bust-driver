@@ -1,0 +1,7 @@
+{
+  "name": "Bust_Driver",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

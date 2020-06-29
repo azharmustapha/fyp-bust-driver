@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Driver Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div text-center style="margin-top: 2cm">
+      <img class="displayed"  height="130 px" width="300 px" src="assets/imgs/bus1.png"/>
+    </div>
+
+    &nbsp;
+
+    <ion-list>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="pemandu_username"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password (IC)</ion-label>
+          <ion-input type="password" [(ngModel)]="pemandu_password"></ion-input>
+        </ion-item>
+      
+    </ion-list>
+
+    <div>
+      <button ion-button color="default" block (click)="login()">Sign In</button>
+    </div>
+
+</ion-content>

@@ -1,0 +1,49 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" [(ngModel)]="pemandu_username"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="pemandu_password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Confirm Password</ion-label>
+          <ion-input type="password" [(ngModel)]="confirm_password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Full Name</ion-label>
+          <ion-input type="text" [(ngModel)]="pemandu_fullname"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Identification Number</ion-label>
+          <ion-input type="text" [(ngModel)]="pemandu_ic"></ion-input>
+        </ion-item>
+
+    </ion-list>
+
+      <div>
+        <button ion-button color="default" block (click)="addRegister()">Register</button>
+        <button ion-button color="light" block (click)="formLogin()">Log In</button>
+      </div>
+
+</ion-content>
